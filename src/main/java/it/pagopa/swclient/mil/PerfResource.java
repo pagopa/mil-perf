@@ -72,7 +72,7 @@ public class PerfResource {
 	@Path("/mil-payment-notice/payments/{transaction_id}/sendPaymentOutcome")
 	@PATCH
 	public Response sendPaymentOutcome() {
-		return Response.noContent().build();
+		return Response.accepted().build();
 	}
 	
 	@Path("/mil-payment-notice/payments/{transaction_id}")
